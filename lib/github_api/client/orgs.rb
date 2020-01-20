@@ -8,6 +8,7 @@ module Github
 
     require_all 'github_api/client/orgs',
                 'hooks',
+                'invitations',
                 'members',
                 'memberships',
                 'projects',
@@ -15,6 +16,9 @@ module Github
 
     # Access to Client::Orgs::Hooks API
     namespace :hooks
+
+    # Access to Client::Orgs::Invitations API
+    namespace :invitations
 
     # Access to Client::Orgs::Members API
     namespace :members
